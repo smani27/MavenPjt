@@ -12,7 +12,6 @@ public class NewTest {
 	  WebDriver driver=new FirefoxDriver();
 	  driver.get("http://erail.in");
 	  Thread.sleep(5000);
-	  driver.close();
-	  
+	  System.out.println("Jenkins");
   }
 }
