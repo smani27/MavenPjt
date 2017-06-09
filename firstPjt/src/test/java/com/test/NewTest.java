@@ -1,6 +1,7 @@
 package com.test;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Test;
 
@@ -9,9 +10,10 @@ public class NewTest {
   public void f() throws InterruptedException {
 	  System.out.println("This is my First Maven Test");
 	  
-	  WebDriver driver=new FirefoxDriver();
-	  driver.get("http://erail.in");
+	  System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
+	  WebDriver driver = new ChromeDriver();
+	  driver.get("https://www.google.com");
 	  Thread.sleep(5000);
-	  System.out.println("Jenkins");
+	  System.out.println("Bamboo...");
   }
 }
