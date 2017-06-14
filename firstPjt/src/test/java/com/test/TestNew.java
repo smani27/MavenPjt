@@ -18,7 +18,6 @@ public class TestNew {
 	  Thread.sleep(5000);
 	  driver.quit();
 	  System.out.println("Bamboo...");
-	  System.out.println("Bamboo...");
 	  
 	  
   }
